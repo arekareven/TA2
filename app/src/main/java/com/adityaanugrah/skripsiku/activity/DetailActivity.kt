@@ -1,3 +1,5 @@
+@file:Suppress("DEPRECATION")
+
 package com.adityaanugrah.skripsiku.activity
 
 import androidx.activity.ComponentActivity
