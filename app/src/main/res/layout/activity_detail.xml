@@ -1,0 +1,54 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.DetailActivity">
+
+    <ImageView
+        android:id="@+id/ngambar"
+        android:layout_width="match_parent"
+        android:layout_height="245dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_launcher_background"
+        android:contentDescription="Foto" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+    <RelativeLayout
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteY="52dp">
+
+        <TextView
+            android:id="@+id/nnamaWisatadetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="12dp"
+            android:text="Nama Wisata"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/ndeskrispsidetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="43dp"
+            android:text="Deskripsi" />
+
+
+    </RelativeLayout>
+    </ScrollView>
+
+
+</LinearLayout>
