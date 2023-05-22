@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.adityaanugrah.skripsiku.R
 import com.adityaanugrah.skripsiku.model.MainModel
 import com.bumptech.glide.Glide
-import kotlinx.android.synthetic.main.row_item.view.nfasilitas
+import kotlinx.android.synthetic.main.row_item.view.nalamat
 import kotlinx.android.synthetic.main.row_item.view.ngambar
 import kotlinx.android.synthetic.main.row_item.view.nnamaWisata
 
@@ -31,7 +31,7 @@ class MainAdapter(
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val result = results[position]
         holder.view.nnamaWisata.text = result.namaWisata
-        holder.view.nfasilitas.text = result.fasilitas
+        holder.view.nalamat.text = result.alamat
 
         Log.d("MainAdapter","resultImage:${result.gambar}")
         Glide.with(holder.view)      //--UNTUK MENAMPILAKAN GAMBAR MENGGUNAKAN GLIDE--
