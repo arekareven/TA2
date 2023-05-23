@@ -48,6 +48,7 @@
             android:text="Nama Wisata"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="20dp"
+            android:layout_marginBottom="2dp"
             android:shadowDx="8"
             android:shadowDy="8"
             android:shadowRadius="20"
@@ -58,17 +59,19 @@
 
         <TextView
             android:id="@+id/nalamat"
+            android:textFontWeight="@integer/material_motion_duration_long_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="16dp"
             android:shadowDx="8"
             android:shadowDy="8"
             android:shadowRadius="20"
             android:textColor="@color/black"
             android:text="Alamat"
-            android:textSize="8sp"
+            android:textSize="12sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"/>
 

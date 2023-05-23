@@ -24,7 +24,7 @@
     <RelativeLayout
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         tools:layout_editor_absoluteY="52dp">
 
         <TextView
@@ -34,7 +34,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginTop="12dp"
             android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
+            android:layout_marginEnd="80dp"
             android:text="Nama Wisata"
             android:textColor="@color/black"
             android:textSize="18sp"
@@ -46,26 +46,50 @@
             android:id="@+id/nalamatdetail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="35dp"
-            android:layout_marginStart="35dp"
-            android:layout_marginEnd="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="120dp"
             android:textStyle="italic"
             android:textColor="@color/black"
             android:textSize="12sp"
+            android:textFontWeight="@integer/material_motion_duration_long_1"
             android:text="Alamat"
             app:layout_constraintTop_toTopOf="@id/nnamaWisatadetail"/>
 
         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:gravity="center"
+            android:textColor="#757575"
+            android:textStyle="italic"
+            android:text="@string/sabar_ya_bos"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="43dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:textDirection="locale"
+            android:text="Deskripsi" />
+
+        <TextView
             android:id="@+id/ndeskrispsidetail"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="120dp"
             android:layout_marginEnd="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
             android:layout_marginBottom="43dp"
             android:textColor="@color/black"
-            android:textSize="15sp"
+            android:textSize="12sp"
+            android:textFontWeight="@integer/material_motion_duration_long_1"
             android:textStyle="normal"
             android:text="Deskripsi" />
 
