@@ -18,7 +18,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyD_7AU1pVekCxM9B_sYj1e2gM8mcqdMs94" />
+            android:value="isi-dengan-api-key-gmaps" />
 
         <activity
             android:name=".activity.SplashActivity"
