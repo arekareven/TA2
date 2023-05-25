@@ -15,6 +15,11 @@
         android:theme="@style/Theme.Skripsiku"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD_7AU1pVekCxM9B_sYj1e2gM8mcqdMs94" />
+
         <activity
             android:name=".activity.SplashActivity"
             android:exported="true"
@@ -24,10 +29,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".activity.DetailActivity"
             android:exported="false"
-            android:theme="@style/FullScreen" />
+            android:theme="@style/Theme.AppCompat" />
+
         <activity
             android:name=".activity.MainActivity"
             android:exported="false"
