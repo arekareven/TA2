@@ -13,7 +13,8 @@ data class MainModel (
         val jamTutup: String,
         val kategori: String,
         val namaWisata: String,
-        val updated_at: String
+        val updated_at: String,
+        val koordinat: String
     )
 
 }

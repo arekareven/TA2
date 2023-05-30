@@ -2,7 +2,7 @@
 
 package com.adityaanugrah.skripsiku.activity
 
-import androidx.activity.ComponentActivity
+/*import kotlinx.android.synthetic.main.activity_detail.nnamaFasilitasdetail*/
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.adityaanugrah.skripsiku.R
@@ -17,7 +17,6 @@ import com.google.android.gms.maps.model.MarkerOptions
 import kotlinx.android.synthetic.main.activity_detail.nalamatdetail
 import kotlinx.android.synthetic.main.activity_detail.ndeskrispsidetail
 import kotlinx.android.synthetic.main.activity_detail.ngambar
-/*import kotlinx.android.synthetic.main.activity_detail.nnamaFasilitasdetail*/
 import kotlinx.android.synthetic.main.activity_detail.nnamaWisatadetail
 
 class DetailActivity : AppCompatActivity(), OnMapReadyCallback {
@@ -50,8 +49,20 @@ class DetailActivity : AppCompatActivity(), OnMapReadyCallback {
     override fun onMapReady(googleMap: GoogleMap) {
         mMap = googleMap
 
-        val palembang = LatLng(-2.9765658625421154, 104.7694819886803)
-        mMap.addMarker(MarkerOptions().position(palembang).title("ini palembang"))
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(palembang))
+        val koordinat = intent.getStringExtra("intent_nkoordinat")
+        val latlong = koordinat!!.split(",".toRegex()).dropLastWhile { it.isEmpty() }
+            .toTypedArray()
+        val latitude = latlong[0].toDouble()
+        val longitude = latlong[1].toDouble()
+        val latLng = LatLng(latitude, longitude)
+//        mMap.addMarker(MarkerOptions().position(latLng).title("ini palembang"))
+//        mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng))
+
+        mMap.addMarker(MarkerOptions().position(latLng).title("Wisatanya"))
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng))
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 16f))
+        mMap.getUiSettings().setAllGesturesEnabled(true)
+        mMap.getUiSettings().setZoomGesturesEnabled(true)
+        mMap.setTrafficEnabled(true)
     }
 }

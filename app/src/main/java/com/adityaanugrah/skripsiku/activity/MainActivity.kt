@@ -44,6 +44,7 @@ class MainActivity : ComponentActivity() {
                     .putExtra("intent_njamBuka",result.jamBuka)
                     .putExtra("intent_njamTutup",result.jamTutup)
                     .putExtra("intent_ngambar",result.gambar)
+                    .putExtra("intent_nkoordinat",result.koordinat)
                 )
             }
 
